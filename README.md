@@ -1,61 +1,95 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+Here's a clean, modern, and professional rewrite of your README file tailored to your actual project. It focuses on **your AI-powered Nuanu City Tour agent**, replaces the default Laravel boilerplate, and includes dedicated space for screenshots.
 
+---
 <p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
+  <img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="300" alt="Laravel Logo">
 </p>
 
-## About Laravel
+<h1 align="center">🛠️ Nuanu City Tour AI Agent</h1>
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+<p align="center">
+  A conversational AI system to qualify guests, guide city tours, and log FAQs — powered by Laravel, Firestore, and Airtable.
+</p>
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+---
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+## ✨ Overview
 
-## Learning Laravel
+This project is a **smart AI agent** designed for the **Nuanu City Tour** experience. It:
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+* Greets guests and collects their names.
+* Guides them through city tour options.
+* Logs FAQs for future knowledge improvements.
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+Everything is logged and stored in **Firestore** and **Airtable** for backend analytics and guest tracking.
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+🎥 **Watch the demo:**
+[Loom Video Walkthrough](https://www.loom.com/share/b0b2916e15a74b7598beaf69e22e8603?sid=13aded91-a129-4281-8ef7-8f2b67d7a4b1)
+---
 
-## Laravel Sponsors
+## 🔁 Conversational Flow
+### 1. 👋 Greeting
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+The agent welcomes users and asks for their name.
+* The name is saved into:
 
-### Premium Partners
+  * 🔥 Firestore: `guest_full_name`
+  * 🧊 Airtable: `Guest Info Table`
+  
+<p align="center">
+  <a href="/"><img src="/public/assets/img/WelcomeSection" alt="GitHub Stars"></a>
+</p>
+<p align="center">
+  <a href="/"><img src="/public/assets/img/FirebaseGuest.webp" alt="GitHub Stars"></a>
+</p>
+<p align="center">
+  <a href="/"><img src="/public/assets/img/AirtableGuest.webp" alt="GitHub Stars"></a>
+</p>
 
-- **[Vehikl](https://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development)**
-- **[Active Logic](https://activelogic.com)**
+---
 
-## Contributing
+### 2. 🧭 Tour Guide
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+Once the guest is greeted, the AI provides guided tour options.
+It fetches dynamic tour data from Firestore and allows free-form questions.
 
-## Code of Conduct
+<p align="center">
+  <a href="/"><img src="/public/assets/img/TourSection.webp" alt="GitHub Stars"></a>
+</p>
+---
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+### 3. ❓ FAQ Logging
 
-## Security Vulnerabilities
+If a guest asks a question (e.g., *"Is this wheelchair accessible?"*), the question is logged for future FAQ creation and improvements.
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+* 🔄 Synced to both Firestore and Airtable.
+<p align="center">
+  <a href="/"><img src="/public/assets/img/FirebaseChats.webp" alt="GitHub Stars"></a>
+</p>
+<p align="center">
+  <a href="/"><img src="/public/assets/img/AirtableChats" alt="GitHub Stars"></a>
+</p>
 
-## License
+---
+## 🧩 Tech Stack
+* **Laravel** (Backend Framework)
+* **OpenAI / AI Integration** (for conversation)
+* **Google Firestore** (Realtime Database)
+* **Airtable** (Guest & FAQ Logging)
+* **JavaScript + Blade** (Frontend UI)
+---
+## 🚀 Getting Started
+1. Clone this repository
+2. Run `composer install`
+3. Setup `.env` file and connect Firestore & Airtable API
+4. Run `php artisan serve`
+5. Start chatting!
+---
+## 🤝 Contributing
+Contributions are welcome! Feel free to open issues or pull requests for improvements.
+---
+## 🛡️ License
+This project is open-sourced under the [MIT license](https://opensource.org/licenses/MIT).
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+---
+Let me know if you’d like help embedding your screenshots or adjusting for deployment or documentation for team use!
