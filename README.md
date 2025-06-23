@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="/public/assets/icon/dark-icon.svg" width="300" alt="Laravel Logo">
+  <img src="/public/assets/icon/light-icon.svg" width="300" alt="Laravel Logo">
 </p>
 
 <h1 align="center">🛠️ Nuanu City Tour AI Agent</h1>
