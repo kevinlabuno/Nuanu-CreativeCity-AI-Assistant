@@ -1,8 +1,5 @@
-Here's a clean, modern, and professional rewrite of your README file tailored to your actual project. It focuses on **your AI-powered Nuanu City Tour agent**, replaces the default Laravel boilerplate, and includes dedicated space for screenshots.
-
----
 <p align="center">
-  <img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="300" alt="Laravel Logo">
+  <img src="/public/assets/icon/dark-icon.webp" width="300" alt="Laravel Logo">
 </p>
 
 <h1 align="center">🛠️ Nuanu City Tour AI Agent</h1>
@@ -37,7 +34,7 @@ The agent welcomes users and asks for their name.
   * 🧊 Airtable: `Guest Info Table`
   
 <p align="center">
-  <a href="/"><img src="/public/assets/img/WelcomeSection" alt="GitHub Stars"></a>
+  <a href="/"><img src="/public/assets/img/WelcomeSection.webp" alt="GitHub Stars"></a>
 </p>
 <p align="center">
   <a href="/"><img src="/public/assets/img/FirebaseGuest.webp" alt="GitHub Stars"></a>
@@ -67,7 +64,7 @@ If a guest asks a question (e.g., *"Is this wheelchair accessible?"*), the quest
   <a href="/"><img src="/public/assets/img/FirebaseChats.webp" alt="GitHub Stars"></a>
 </p>
 <p align="center">
-  <a href="/"><img src="/public/assets/img/AirtableChats" alt="GitHub Stars"></a>
+  <a href="/"><img src="/public/assets/img/AirtableChats.webp" alt="GitHub Stars"></a>
 </p>
 
 ---
